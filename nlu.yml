@@ -1,0 +1,264 @@
+version: "3.1"
+
+nlu:
+  # Greeting intent
+  - intent: greet
+    examples: |
+      - Hello
+      - Hi there!
+      - Hey!
+      - Good morning
+      - Good evening
+      - What's up?
+      - Greetings!
+      - Hey there
+      - Hi, how are you?
+      - Hello bot
+      - Yo!
+      - Good day
+      - Nice to meet you
+      - Howdy!
+      - Hi, what's up?
+
+  # Goodbye intent
+  - intent: goodbye
+    examples: |
+      - Goodbye
+      - Bye
+      - See you later
+      - Take care
+      - Have a nice day
+      - Farewell
+      - Catch you later
+      - Bye bye
+      - Talk to you soon
+      - See ya!
+      - Adios
+      - Until next time
+      - I'm leaving now
+      - Have a good one
+      - See you soon
+
+  # Help intent
+  - intent: ask_help
+    examples: |
+      - I need help
+      - Can you assist me?
+      - Help me out
+      - I need some guidance
+      - Can you help?
+      - I have a question
+      - I am confused
+      - Need some information
+      - Looking for support
+      - Who can help me?
+      - Where can I find assistance?
+      - I need directions
+      - Can you provide information?
+      - Where should I go for help?
+      - Help please
+
+  # Finance fee payment intent
+  - intent: ask_finance_fee_payment
+    examples: |
+      - Where do I pay my fees?
+      - How can I make a fee payment?
+      - What are the available payment methods?
+      - Where is the finance office?
+      - I need to pay my tuition fees
+      - How do I complete my payment?
+      - Can I pay in installments?
+      - Is there an online payment option?
+      - How do I confirm my fee payment?
+      - What happens if I miss a payment deadline?
+      - Who do I contact for payment issues?
+      - What is the last date to pay fees?
+      - Can I pay by credit card?
+      - Is there a late payment penalty?
+      - I have a question about my fee payment
+
+  # Finance refund intent
+  - intent: ask_finance_refund
+    examples: |
+      - How do I apply for a refund?
+      - What is the refund process?
+      - Can I get a refund on my tuition fees?
+      - Who handles refunds?
+      - How long does a refund take?
+      - Where can I check my refund status?
+      - What are the refund policies?
+      - Can I get a refund if I withdraw?
+      - Is there a deadline for refunds?
+      - Can I get a partial refund?
+      - What documents are needed for a refund?
+      - Where do I submit my refund request?
+      - How is the refund processed?
+      - Who should I contact for refund issues?
+      - Can I get a refund for overpayment?
+
+  # Finance credit control intent
+  - intent: ask_finance_credit_control
+    examples: |
+      - What is credit control?
+      - How do I manage my student credit?
+      - Can I get financial assistance?
+      - Is there an installment plan?
+      - How do I apply for credit support?
+      - Can I delay my fee payment?
+      - What happens if I don’t pay on time?
+      - Where can I check my financial status?
+      - Who manages credit control at the university?
+      - What are the credit policies?
+      - Can I apply for a payment extension?
+      - Is there a financial aid option?
+      - Can I pay part of my fees now and the rest later?
+      - What happens if I default on payments?
+      - Who do I talk to about credit issues?
+
+
+  # Exam-related questions intent
+  - intent: ask_exams
+    examples: |
+      - When are the exams scheduled?
+      - Where can I find my exam timetable?
+      - How do I register for exams?
+      - What is the exam format?
+      - What happens if I miss an exam?
+      - Can I reschedule my exam?
+      - Where is the exam hall?
+      - What should I bring to the exam?
+      - How do I prepare for my exams?
+      - Where can I find past exam papers?
+      - What are the passing marks?
+      - How long does the exam last?
+      - What if I fail an exam?
+      - Can I get extra time for my exam?
+      - Who should I contact for exam-related queries?
+      - Why didn't you release our grades?
+  
+  # Student Services related queries intent
+  - intent: ask_student_services
+    examples: |
+      - What services does Student Services provide?
+      - Where is the Student Services office?
+      - How do I contact Student Services?
+      - Can Student Services help with my ID card?
+      - What are the office hours for Student Services?
+      - Can I get health insurance information from Student Services?
+      - Who do I contact for student events?
+      - Can I get counseling at Student Services?
+      - How do I book an appointment with Student Services?
+      - Where can I find student support?
+      - What resources does Student Services offer?
+      - Can Student Services help with scholarships?
+      - Where do I report a student issue?
+      - Can I get information about student rights?
+      - How do I update my student information?
+
+  # Career Services related queries intent
+  - intent: ask_career_services
+    examples: |
+      - Where can I get career guidance?
+      - Who do I talk to about finding a job?
+      - How do I book an appointment for career services?
+      - Where is career support?
+      - Can I get help with my CV?
+
+  # Programme Coordinator related queries intent
+  - intent: ask_programme_coordinator
+    examples: |
+      - Who do I contact for timetable issues?
+      - Where can I get help with MyPage and Canvas?
+      - What room is for program coordinators?
+      - Who handles class attendance?
+      - Can I change my course schedule?
+
+  # Accommodation related queries intent
+  - intent: ask_accommodation
+    examples: |
+      - Who can help me find accommodation?
+      - Where is accommodation support?
+      - I need help finding a place to stay.
+      - How do I apply for accommodation?
+      - I need to find apartment for myself.
+
+  # Matriculation related queries intent
+  - intent: ask_matriculation
+    examples: |
+      - How do I get a matriculation letter?
+      - Who handles matriculation letters?
+      - What do I need to get my matriculation letter?
+
+  # Academic Support related queries intent
+  - intent: ask_academic_support
+    examples: |
+      - Where is the academic support center?
+      - Who helps with academic skills development?
+      - What resources are available for academic help?
+      - Can I get tutoring for specific courses?
+
+  # Student Council related queries intent
+  - intent: ask_student_council
+    examples: |
+      - Where can I contact the student council?
+      - Who are the student council presidents?
+      - How can I share my ideas with student council?
+      - What is the role of the student council?
+
+  # International Affairs related queries intent
+  - intent: ask_international_affairs
+    examples: |
+      - Where is the Visa office?
+      - How do I apply for a student visa?
+
+  # German Classes related queries intent
+  - intent: ask_german_classes
+    examples: |
+      - Where can I learn German?
+      - Who can I contact for German class information?
+      - How do I sign up for German courses?
+      - Are there any beginner German courses available?
+
+  # Matriculation Confirmation related queries intent
+  - intent: ask_matriculation_confirmation
+    examples: |
+      - How can I get a confirmation of matriculation?
+      - Who can help me with matriculation confirmation?
+      - Where can I get my matriculation confirmation?
+      - What documents do I need for matriculation confirmation?
+
+  # Reception-related queries intent
+  - intent: ask_reception
+    examples: |
+      - Where can I get my student ID?
+      - Where can I buy College Merch?
+      - How can I find my classroom?
+      - What are the reception's working hours?
+      - Where can I find (name) ?
+
+  # Fallback intent for unknown queries
+  - intent: user_query
+    examples: |
+      - I don’t know what to ask
+      - Can you repeat that?
+      - This doesn’t make sense
+      - I have an unusual request
+      - What happens if I need something else?
+      - How do I ask something else?
+      - I don’t understand
+      - This is confusing
+      - I'm lost
+      - Help, I don't know what to do
+      - I need help but don't know what to ask
+      - Who should I talk to?
+      - Can you explain better?
+      - Where do I go now?
+      - I'm not sure what I need
+
+
+  - intent: store_data
+    examples: |
+      - store conversation
+      - save chat logs
+      - please save this conversation
+      - log this data
