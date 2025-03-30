@@ -1,0 +1,106 @@
+version: "3.1"
+
+stories:
+  - story: greet 
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: finance fee payment inquiry
+    steps:
+      - intent: ask_finance_fee_payment
+      - action: utter_ask_finance_fee_payment
+
+  - story: finance refund inquiry
+    steps:
+      - intent: ask_finance_refund
+      - action: utter_ask_finance_refund
+
+  - story: finance credit control inquiry
+    steps:
+      - intent: ask_finance_credit_control
+      - action: utter_ask_finance_credit_control
+
+  - story: exam inquiry
+    steps:
+      - intent: ask_exams
+      - action: utter_ask_exams
+
+  - story: student services inquiry
+    steps:
+      - intent: ask_student_services
+      - action: utter_ask_student_services
+
+  - story: career services inquiry
+    steps:
+      - intent: ask_career_services
+      - action: utter_ask_career_services
+
+  - story: programme coordinator inquiry
+    steps:
+      - intent: ask_programme_coordinator
+      - action: utter_ask_programme_coordinator
+
+  - story: accommodation inquiry
+    steps:
+      - intent: ask_accommodation
+      - action: utter_ask_accommodation
+
+  - story: matriculation inquiry
+    steps:
+      - intent: ask_matriculation
+      - action: utter_ask_matriculation
+
+  - story: academic support inquiry
+    steps:
+      - intent: ask_academic_support
+      - action: utter_ask_academic_support
+
+  - story: student council inquiry
+    steps:
+      - intent: ask_student_council
+      - action: utter_ask_student_council
+
+  - story: international affairs inquiry
+    steps:
+      - intent: ask_international_affairs
+      - action: utter_ask_international_affairs
+
+  - story: german classes inquiry
+    steps:
+      - intent: ask_german_classes
+      - action: utter_ask_german_classes
+
+  - story: matriculation confirmation inquiry
+    steps:
+      - intent: ask_matriculation_confirmation
+      - action: utter_ask_matriculation_confirmation
+
+  - story: general queries (reception)
+    steps:
+      - intent: ask_reception
+      - action: utter_ask_reception 
+
+  - story: bye ending of conversation
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye 
+
+  
+  - story: ask_help
+    steps:
+      - intent: ask_help
+      - action: utter_ask_help
+
+
+  - story: handle user query with custom fallback and logging
+    steps:
+      - intent: user_query
+      - action: action_fallback_and_log
+
+  - story: store data
+    steps:
+      - intent: store_data
+      - action: action_store_data
+
+
