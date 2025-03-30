@@ -1,0 +1,171 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_help
+  - ask_finance_fee_payment
+  - ask_finance_refund
+  - ask_finance_credit_control
+  - ask_exams
+  - ask_student_services
+  - ask_career_services
+  - ask_programme_coordinator
+  - ask_accommodation
+  - ask_matriculation
+  - ask_academic_support
+  - ask_student_council
+  - ask_international_affairs
+  - ask_german_classes
+  - ask_matriculation_confirmation
+  - ask_reception
+  - fallback
+  - user_query
+  - store_data
+
+
+entities:
+  - payment_method
+  - fee_type
+  - payment_status
+  - exam_type
+  - exam_status
+  - subject
+  - student_service
+  - support_type
+  - lecturer_name
+
+# Responses define the messages the bot sends in response to user intents.
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you with college navigation today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Let me know if you need any help later."
+
+  utter_ask_help:
+    - text: "How can I assist you? You can ask about courses, exams, or anything related to the university."
+
+  utter_ask_finance_fee_payment:
+    - text: "You can pay your fees at the Finance Department, Room 101."
+
+  utter_ask_finance_refund:
+    - text: "To request a refund, please visit the Finance Department, Room 102."
+
+  utter_ask_finance_credit_control:
+    - text: "For credit control issues, please head to Room 103 in the Finance Department."
+
+  utter_ask_exams:
+    - text: |
+        For exam-related inquiries, visit Room 408.
+        📧 Email: exams@gmail.com
+        📞 Phone: +49 987 654 3210
+        Open hours: 10am to 6pm
+
+  utter_ask_student_services:
+    - text: |
+        Student Services is in Room 306. They handle non-academic questions, health insurance, and student events.
+        📧 Email: studentservices@gmail.com
+        📞 Phone: +49 111 222 3333
+        Open hours: 10am to 6pm
+
+  utter_ask_career_services:
+    - text: |
+        Career Services is in Room 406. You need an appointment, which you can book online.
+        📧 Email: careers@gmail.com
+        📞 Phone: +49 444 555 6666
+        Open hours: 10am to 6pm
+
+  utter_ask_programme_coordinator:
+    - text: |
+        Programme Coordinators are in Room 209. They assist with timetables, MyPage, Canvas, and class attendance.
+        📧 Email: programme@gmail.com
+        📞 Phone: +49 777 888 9999
+        Open hours: 10am to 6pm
+
+  utter_ask_accommodation:
+    - text: |
+        For accommodation support, visit Room 306.
+        📧 Email: accommodation@gmail.com
+        📞 Phone: +49 222 333 4444
+        Open hours: 10am to 6pm
+
+  utter_ask_matriculation:
+    - text: |
+        Matriculation letters can be requested via email.
+        📧 Email: matriculation@gmail.com
+        📞 Phone: +49 555 666 7777
+        Open hours: 10am to 6pm
+
+  utter_ask_academic_support:
+    - text: |
+        The Academic Support Center is in Room 202. They offer academic resources and skill development.
+        📧 Email: academicsupport@gmail.com
+        📞 Phone: +49 999 000 1111
+        Open hours: 10am to 6pm
+
+  utter_ask_student_council:
+    - text: |
+        Student Council representatives are available via email.
+        📧 Email: studentcouncil@gmail.com
+        📞 Phone: +49 123 987 6543
+        Open hours: 10am to 6pm
+
+  utter_ask_international_affairs:
+    - text: |
+        The International Affairs and Visa Guidance Center is in Room 306.
+        📧 Email: international@gmail.com
+        📞 Phone: +49 456 987 6543
+        Open hours: 10am to 6pm
+
+  utter_ask_german_classes:
+    - text: |
+        For information about German classes, please contact the German department.
+        📧 Email: german_classes@gmail.com
+        📞 Phone: +49 111 222 3334
+        Open hours: 10am to 6pm
+
+  utter_ask_matriculation_confirmation:
+    - text: |
+        For matriculation confirmation, please reach out to the matriculation department.
+        📧 Email: matriculation_confirmation@gmail.com
+        📞 Phone: +49 555 666 7778
+        Open hours: 10am to 6pm
+
+  utter_ask_reception:
+    - text: |
+        The reception desk can assist you with general queries.
+        📧 Email: reception@gmail.com
+        📞 Phone: +49 888 814 4445
+        Open hours: 10am to 6pm
+
+  utter_fallback:
+    - text: |
+        I'm not sure how to help with that. However, the reception team can assist you.
+        📧 Email: reception@gmail.com
+        📞 Phone: +49 88881 44445
+        Open hours: 10am to 6pm
+
+# Actions define custom actions that are executed when a specific event occurs.
+actions:
+  - action_default_fallback
+  - action_restart
+  - action_fallback_and_log
+  - action_store_data
+  - action_provide_accommodation_info
+  - action_provide_student_services_info
+  - action_provide_career_services_info
+  - action_provide_matriculation_info
+  - action_provide_academic_support_info
+  - action_provide_student_council_info
+  - action_provide_international_affairs_info
+  - action_provide_german_classes_info
+  - action_provide_matriculation_confirmation_info
+  - action_provide_reception_info
+
+
+
+# Session configuration determines how long the session lasts and whether slots carry over.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
